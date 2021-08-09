@@ -1,13 +1,5 @@
 #!/usr/bin/node
-/*
-script that prints 3 lines using an array and a loop
-*/
-const arrayStrings = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (let i = 0; i < arrayStrings.length; i++) {
-  console.log(arrayStrings[i]);
+const items = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+for (let i = 0; items[i] !== undefined; i++) {
+  console.log(items[i]);
 }
-/*
-Another way:
-arrayStrings.forEach(function (element, array) {
-  console.log(element);
-}); */
